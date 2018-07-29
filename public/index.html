@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0" />
   <link rel="stylesheet" href="/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <style>
-  /* desktop media queries */
+  /* ----------------desktop media quey ---------------*/
     @media only screen and (min-width: 960px){
       .container{
         width: 960px;
@@ -18,13 +18,14 @@
         padding: 35px 15px 51px 15px !important;
       }
     }
-    /* smaller laptop/tablet devices media queries */
+
+    /* ----------------smaller laptop/tablet devices media query---------------*/
     @media only screen and (max-width: 960px){
       .container{
         width: 600px;
       }
     }
-    /* mobile devices */
+    /* ----------------mobile devices media query ---------------*/
     @media only screen and (max-width: 600px){
       .container{
         width: 100%;
@@ -37,44 +38,47 @@
         width: 100%;
       }
 
-      /* ------ Hero Lets You Section ------ */
+      /* --- Hero Lets You Section --- */
 
-      .notifySection, .shareSection{
-        width: 50%;
+      .notifySection, .shareSection, .connectSection{
+        width: 100%;
 
       }
 
-      .connectSection{
+      /* --- Most Advanced Section --- */
+      .advanCont{
+        text-align: center;
+      }
+
+      .mostAdvanced-left-col, .mostAdvanced-right-col{
         width: 100%;
       }
 
-      .heroLetsYouParagraph{
-        width: 90%;
+      .imgPlaceholder{
+        width: 100%;
       }
 
-      /* ------ Hero Lets You Section ------ */
-.advanCont{
-  margin: 0 auto;
-  text-align: center;
-}
-
-      .mostAdvanced-left-col, .mostAdvanced-right-col{
-        width: 80%;
-        
-        margin: 0 auto;
+      /* --- Most Advanced Section --- */
+      .featuresColLeft, .featuresColRight, .featuresColMiddle{
+        width: 100%;
+        padding-bottom: 35px !important;
       }
 
+      /* --- Most Advanced Section --- */
+      .detailTableLeftCol, .detailTableRightCol{
+        padding: 5px !important;
+      }
     }
   </style>
 </head>
 
-<body style="background: black; margin: 0; padding: 0; text-align: center;">
+<body style="background: black; margin: 0 auto; padding: 0; text-align: center;">
   <!-- beginning of html email -->
   <table width='100%' border='0' cellspacing='0' cellpadding='0'>
     <tr>
       <td>
-        <!-- beginning of header container -->
-        <table style="margin: 0 auto; text-align: left"class="container" width='600px' align='center' cellspacing='0' cellpadding='0' border='0'>
+        <!-- beginning of main content container -->
+        <table style="margin: 0 auto; "class="container" width='600px' align='center' cellspacing='0' cellpadding='0' border='0'>
           <!-- start of header row -->
           <tr>
             <td>
@@ -121,7 +125,7 @@
           <!-- end of header row -->
           <!-- start of "what it can do for you" (lets you) row -->
           <tr>
-            <td class="HeroLetsYouContainer"style="background: white;">
+            <td class="heroLetsYouContainer"style="background: white;">
               <h3 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#333333; padding: 36px 0 5px 0; font-weight: 300; text-transform: uppercase; font-size: 24px;" align="center">Hero Lets You...</h3>
               <!-- start of left column-->
               <table class="notifySection" width='33.33%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 15px 15px 70px 15px;">
@@ -137,7 +141,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <p class="heroLetsYouParagraph" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Cras mattis consectetur purus sit fermentum</p>
+                    <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Cras mattis consectetur purus sit fermentum</p>
                   </td>
                 </tr>
                 <tr>
@@ -161,7 +165,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <p class="heroLetsYouParagraph" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Cras mattis consectetur purus sit fermentum</p>
+                    <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Cras mattis consectetur purus sit fermentum</p>
                   </td>
                 </tr>
                 <tr>
@@ -175,7 +179,7 @@
               <table class="connectSection" width='33.33%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 15px 15px 70px 15px;">
                 <tr>
                   <td>
-                    <table class="header-left" width='33.33%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 0;">
+                    <table class="header-left2" width='33.33%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 0;">
                       <tr>
                         <td style="width: 43px"><img src="/img/wifi_icon.png"></td>
                         <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">Connect</td>
@@ -185,7 +189,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <p class="heroLetsYouParagraph" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Cras mattis consectetur purus sit fermentum</p>
+                    <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Cras mattis consectetur purus sit fermentum</p>
                   </td>
                 </tr>
                 <tr>
@@ -227,7 +231,7 @@
                         </td>
                       </tr>
                     </table>
-                    <table class="mostAdvanced-right-col" width='50%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 15px 15px 0 15px; background: #fafafa;">
+                    <table class="mostAdvanced-right-col" width='50%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 15px 15px 70px 15px; background: #fafafa;">
                       <tr>
                         <td>
                           <p style="padding: 0 0 15px; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
@@ -576,7 +580,7 @@
           </tr>
           <!-- end of footer row -->
         </table>
-        <!-- end of container -->
+        <!-- end of main content container -->
       </td>
     </tr>
   </table>
