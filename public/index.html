@@ -32,6 +32,8 @@
       .container{
         width: 600px;
       }
+
+
     }
     /* ----------------mobile devices media query ---------------*/
     @media only screen and (max-width: 600px){
@@ -40,6 +42,7 @@
       }
       .header-left{
         width: 100%;
+        text-align: center;
       }
 
       .header-right{
@@ -50,7 +53,19 @@
       /* --- Hero Lets You Section --- */
 
       .notifySection, .shareSection, .connectSection{
-        width: 50%;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 45px !important;
+      }
+
+      .header-left2{
+        float: none;
+        margin: 0 auto;
+      }
+
+      .heroLetsYouPara{
+        text-align: center;
       }
 
       /* --- Most Advanced Section --- */
@@ -60,6 +75,10 @@
 
       .mostAdvanced-left-col, .mostAdvanced-right-col{
         width: 100%;
+      }
+
+      .mostAdvanced-left-col{
+        padding-bottom: 25px !important;
       }
 
       .imgPlaceholder{
@@ -73,16 +92,26 @@
       }
 
       /* --- Detail Section --- */
-      .detailTableLeftCol1, {
-        width: 100% !important;
-         padding: 0    !important;
+      .detailTableLeftCol, .detailTableRightCol {
+        width: 100%;
       }
 
+      .detailTableHeader {
+        float: none;
+        max-width: 170px;
+        width: 50% !important;
+        margin: 0 auto;
+        padding-bottom: 10px;
+      }
+
+      .innerDetailContainerTable{
+        text-align: center;
+      }
     }
   </style>
 </head>
 
-<body style="background: black; margin: 0 auto; padding: 0; text-align: center;">
+<body style="background: black; margin: 0 auto; padding: 0;">
   <!-- beginning of html email -->
   <table width='100%' border='0' cellspacing='0' cellpadding='0'>
     <tr>
@@ -151,7 +180,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <p align='left' style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Cras mattis consectetur purus sit fermentum</p>
+                    <p class="heroLetsYouPara"align='left' style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Cras mattis consectetur purus sit fermentum</p>
                   </td>
                 </tr>
                 <tr>
@@ -175,7 +204,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <p align='left' style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Cras mattis consectetur purus sit fermentum</p>
+                    <p class="heroLetsYouPara"align='left' style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Cras mattis consectetur purus sit fermentum</p>
                   </td>
                 </tr>
                 <tr>
@@ -189,7 +218,7 @@
               <table class="connectSection" width='33.33%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 15px 15px 70px 15px;">
                 <tr>
                   <td>
-                    <table  width='33.33%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 0;">
+                    <table  class="header-left2" width='33.33%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 0;">
                       <tr>
                         <td style="width: 43px"><img src="/img/wifi_icon.png"></td>
                         <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">Connect</td>
@@ -199,7 +228,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <p align='left' style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Cras mattis consectetur purus sit fermentum</p>
+                    <p class="heroLetsYouPara"align='left' style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Cras mattis consectetur purus sit fermentum</p>
                   </td>
                 </tr>
                 <tr>
@@ -368,11 +397,11 @@
                       <tr>
                         <td>
                           <!-- start of the left detail container table -->
-                          <table class="detailTableLeftCol1" width='50%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 25px 15px;">
+                          <table class="detailTableLeftCol" width='50%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 25px 15px;">
                             <tr>
                               <td>
                                 <!-- start of the  detail table's header -->
-                                <table class="detailTableHeader" width='100%' align='left' cellspacing='0' cellpadding='0' border='0'>
+                                <table class="detailTableHeader" width='100%'  cellspacing='0' cellpadding='0' border='0'>
 
                                     <td>
                                       <img src="/img/phone_icon.png" alt="">
@@ -390,39 +419,31 @@
                             </tr>
                             <!-- end of the left detail container table -->
                           </table>
-                        </td>
-                        <td>
-                          <!-- start of the right detail container table -->
+                          <!-- start of the left detail container table -->
                           <table class="detailTableRightCol" width='50%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 25px 15px;">
                             <tr>
                               <td>
                                 <!-- start of the  detail table's header -->
-                                <table class="detailTableHeader" width='100%' align='left' cellspacing='0' cellpadding='0' border='0'>
+                                <table class="detailTableHeader" width='100%'  cellspacing='0' cellpadding='0' border='0'>
 
                                     <td>
                                       <img src="/img/retina_icon.png" alt="">
                                     </td>
                                     <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">retina ready</td>
+
                                 <!-- end of the  detail table's header -->
                                 </table>
                               </td>
                             </tr>
                             <tr>
                               <td>
-                                 <p style="margin: 0 0 15px 0; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Ex cum aeque volutpat conceptam. Deseruisse constituam eu.</p>
+                                 <p style="margin: 0 0 15px 0; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Quo at exerci facilis omnesque. Qui et sale habeo.</p>
                               </td>
                             </tr>
-                            <!-- end of the right detail container table -->
+                            <!-- end of the left detail container table -->
                           </table>
-                        </td>
-                      </tr>
-                      <!-- end of detail table first row -->
-
-                      <!-- start of detail table second row -->
-                      <tr>
-                        <td>
                           <!-- start of the left detail container table -->
-                          <table class="detailTableLeftCol" width='50%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 25px 15px 25px 54px;">
+                          <table class="detailTableLeftCol" width='50%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 25px 15px;">
                             <tr>
                               <td>
                                 <!-- start of the  detail table's header -->
@@ -439,44 +460,36 @@
                             </tr>
                             <tr>
                               <td>
-                                 <p style="margin: 0 0 15px 0; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Sint dicunt nam ex. Menandri recusabo invenire mea.</p>
+                                 <p style="margin: 0 0 15px 0; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Viderer labitur adipiscing no vel, cu eam autem menandri.</p>
                               </td>
                             </tr>
                             <!-- end of the left detail container table -->
                           </table>
-                        </td>
-                        <td>
-                          <!-- start of the right detail container table -->
+                          <!-- start of the left detail container table -->
                           <table class="detailTableRightCol" width='50%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 25px 15px;">
                             <tr>
                               <td>
                                 <!-- start of the  detail table's header -->
                                 <table class="detailTableHeader" width='100%' align='left' cellspacing='0' cellpadding='0' border='0'>
 
-                                    <td style="width: 50%">
+                                    <td>
                                       <img src="/img/settings_icon.png" alt="">
                                     </td>
-                                    <td style="width: 50%; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">great performance</td>
+                                    <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">great performance</td>
+
                                 <!-- end of the  detail table's header -->
                                 </table>
                               </td>
                             </tr>
                             <tr>
                               <td>
-                                 <p style="margin: 0 0 15px 0; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Ei sed quas evertitur, in mel justo quaeque.</p>
+                                 <p style="margin: 0 0 15px 0; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Sed ea tollit dignissim sadipscing. Nec falli mollis temporibus.</p>
                               </td>
                             </tr>
-                            <!-- end of the right detail container table -->
+                            <!-- end of the left detail container table -->
                           </table>
-                        </td>
-                      </tr>
-                      <!-- end of detail table second row -->
-
-                      <!-- start of detail table third row -->
-                      <tr>
-                        <td>
                           <!-- start of the left detail container table -->
-                          <table class="detailTableLeftCol" width='50%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 25px 15px 25px 54px;">
+                          <table class="detailTableLeftCol" width='50%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 25px 15px;">
                             <tr>
                               <td>
                                 <!-- start of the  detail table's header -->
@@ -485,7 +498,7 @@
                                     <td>
                                       <img src="/img/menu_icon.png" alt="">
                                     </td>
-                                    <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">user-friendly menus</td>
+                                    <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">user-friendly</td>
 
                                 <!-- end of the  detail table's header -->
                                 </table>
@@ -493,14 +506,12 @@
                             </tr>
                             <tr>
                               <td>
-                                 <p style="margin: 0 0 15px 0; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Sea ad alii quando. Utamur meliore splendide ex.</p>
+                                 <p style="margin: 0 0 15px 0; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Ne causae pericula persequeris pri, iudico nemore singulis ei.</p>
                               </td>
                             </tr>
                             <!-- end of the left detail container table -->
                           </table>
-                        </td>
-                        <td>
-                          <!-- start of the right detail container table -->
+                          <!-- start of the left detail container table -->
                           <table class="detailTableRightCol" width='50%' align='left' cellspacing='0' cellpadding='0' border='0' style="padding: 25px 15px;">
                             <tr>
                               <td>
@@ -511,18 +522,20 @@
                                       <img src="/img/share_icon.png" alt="">
                                     </td>
                                     <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#333333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">social share</td>
+
                                 <!-- end of the  detail table's header -->
                                 </table>
                               </td>
                             </tr>
                             <tr>
                               <td>
-                                 <p style="margin: 0 0 15px 0; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Ne ius legimus abhorreant, ei eam recteque persecuti.</p>
+                                 <p style="margin: 0 0 15px 0; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#7f8887; font-size: 14px; font-weight: 300; line-height: 1.8;">Etiam cotidieque ex eos, ex pri graeco repudiandae equidem.</p>
                               </td>
                             </tr>
-                            <!-- end of the right detail container table -->
+                            <!-- end of the left detail container table -->
                           </table>
                         </td>
+
                       </tr>
                       <!-- start of detail table third row -->
 
